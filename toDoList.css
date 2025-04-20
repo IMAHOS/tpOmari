@@ -1,0 +1,48 @@
+button{
+    background:linear-gradient(rgb(0, 255, 26),transparent);
+    border: black solid 1px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.liste-avec-check {
+  list-style: none; /* Enlève les puces par défaut */
+  padding-left: 0;
+}
+
+.liste-avec-check li::before {
+  content: "✅";
+  margin-right: 8px;
+}
+body{
+    background-image: linear-gradient(rgb(0, 208, 255),transparent);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+input{
+    border-radius: 3px;
+    border: black solid 1px;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    top: 10px;
+}
+button{
+    border-radius: 3px;
+    border: black solid 1px;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    left: 100vh;
+    top: 10px;
+
+}

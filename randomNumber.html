@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let compt=0;
+    let nbrGeuss=parseInt(Math.random()*10);
+    let choice=1;
+    if(!isNaN(choice)){
+
+        do {
+                
+                choice = prompt("Je choiser un nombre entre 1 et 10 . \n Devenir est qoui");
+                if(choice>nbrGeuss) alert( "Oops ! le nombre chisissez est plus grande.");
+                if(choice<nbrGeuss) alert("Oops ! le nombre choisissez est plus petit");
+                
+                compt++;
+            } while(choice!=nbrGeuss); 
+            if( compt!=1 ) alert("Vous trouvez le nombre correct dans  attentative " + compt); 
+            else alert("Bravo! vous trouvez le nombre correct dans la premier attentive \n You are m3alem!" );
+    }
+    else alert("Not a number !");
+</script>
+</html>

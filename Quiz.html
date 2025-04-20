@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="quiz()" type="submit" 
+    style="
+    background-color: lightseagreen;
+    width: 90px;height:50px ;
+    border-radius: 10px;
+    position: relative;
+    top:50vh;
+    left: 50%;
+    
+    
+    
+    ">strat quiz</button>
+</body>
+<script>
+
+
+
+function quiz(){
+    // confirm(yw);    
+    let TAB="";
+    let j=0;
+    let comptW=0;
+    let comptL=0;
+    let reponse=[];
+    let option=["المريسيع","الزوجات","أخت الزوجة","أربعة أشهر و عشرة"];
+    let QUESTION=[[" ما هي الغزوة التي حدثت فيها قصة الإفك ؟ "," المريسيع "],[ "من هم المستحقون للثمن في الإرث "," الزوجات"],[ "ما هي المرأة التي حرام على الزوج نكاحها إلا بمفارقة الزوجة ؟ "," أخت الزوجة"],[ "كم تحد المرأة على زوجها ؟"," أربعة أشهر و عشرة "]];
+    for(let i=0;i<QUESTION.length;i++){
+        reponse[i]=prompt(QUESTION[i][j]);
+        reponse[i]==option[i]?comptW++:comptL++;
+    }
+
+    
+
+    for(let i=0;i<QUESTION.length;i++){
+            TAB+=QUESTION[i][j+1]+" \t"+QUESTION[i][j]+"\n";
+    }
+    alert("Good! you answer a "+comptW+"correctly but "+comptL+"are wrong\n"+TAB);
+}</script>
+</html>
